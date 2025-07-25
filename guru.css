@@ -1,0 +1,35 @@
+body {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+section {
+  padding-top: 50px;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #111;
+}
+.skills-list li {
+  font-size: 1.2rem;
+  padding: 10px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.fade-skill {
+  animation-name: fadeUp;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
